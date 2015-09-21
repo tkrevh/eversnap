@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load i18n %}
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8"/>
+    <meta http-equiv="Accept-Encoding" content="gzip"/>
+    <meta http-equiv="Content-Encoding" content="gzip"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta http-equiv="Cache-Control" content="no-cache"/>
+    <meta http-equiv="imagetoolbar" content="no"/>
+    <meta name="author" content="Tadej Krevh"/>
+    <meta name="owner" content="Tadej Krevh"/>
+    <meta name="copyright" content="Copyright 2014 TIK Tadej Krevh s.p."/>
+    <meta name="keywords" content="Eversnap Django Assginment"/>
+    <meta name="description" content="TweetsAlbum downloads pictures posted on Twitter under given hashtags and stores them locally"/>
+    <link rel="shortcut icon" href=""/>
+    <link href="{{ STATIC_URL }}css/styles.css" rel="stylesheet" type="text/css"/>
+    {% block head %}{% endblock %}
+</head>
+<body class="no-touch">
+{% autoescape off %}{% block header %}{% endblock %}{% endautoescape %}
+{% autoescape off %}{% block content %}{% endblock %}{% endautoescape %}
+{% block footer %}{% include "footer.html" %}{% endblock %}
+{% block scripts %}{% endblock %}
+</body>
+</html>

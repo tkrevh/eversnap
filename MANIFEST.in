@@ -1,0 +1,5 @@
+include *.txt
+recursive-include docs *
+recursive-include tweetsalbum/static *
+recursive-include tweetsalbum/templates *
+recursive-include tweetsalbum/migrations *
